@@ -86,31 +86,6 @@
   right: 5px;
   font-size: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cart-summary {
     width: 25%;
     border: 1px solid gray;
@@ -144,7 +119,13 @@
   .empty-cart h1 {
     font-size: 18px;
     padding: 16px 0px;
-
+  }
+  @media (max-width: 600px) {
+    
+    .empty-cart h1 {
+      text-align: center;
+    line-height: 1.5;
+    }
   }
   .empty-cart .empty-cart-link {
     height: 44px;
