@@ -1,0 +1,109 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.modal .content {
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  display: flex;
+}
+.modal .content .modal-image {
+  height: 100%;
+  width: 30%;
+  margin-right: 80px;
+}
+.modal .content .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.modal .content .modal-info > h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.modal .content .in-stock {
+  font-size: 22px;
+}
+.rating {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.rating i {
+  font-size: 16px;
+  color: #ffc107;
+}
+.reviews {
+  margin-left: 15px;
+  color: #777;
+}
+
+
+.modal-info>h2 {
+font-size: 25px;
+margin-bottom: 25px;
+}
+.modal-info .author span {
+    color: #3491b8;
+}
+.modal-info .price span {
+    color: #e43241;
+    margin-left: 10px;
+}
+
+.modal .add-to-cart-input {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+.modal .add-to-cart-button {
+    border: 1px solid green;
+    border-radius: 7px;
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: green;
+    font-size: 21px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.modal .add-to-cart-button i {
+    margin-right: 5px;
+}
+
+.modal .add-to-cart-button:hover{
+   background-color: rgb(224, 248, 224) ;
+}
+.modal .details-button {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
+    display: block;
+    width: fit-content;
+}
+.modal .details-button:hover {
+    background-color: #0B389D;
+}

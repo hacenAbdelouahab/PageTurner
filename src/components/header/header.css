@@ -1,0 +1,229 @@
+.header {
+  background-color: var(--primary-color);
+  position: relative;
+}
+.header-top {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  border-bottom: 1px solid white;
+}
+.header-top .text {
+  font-size: 10px;
+}
+.header-top .phone {
+  font-size: 18px;
+  margin-left: -40px;
+  justify-self: left;
+}
+.header-top .phone .bi {
+  margin-right: 5px;
+}
+.header-top .login {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.header-top .login .bi {
+  margin-right: 5px;
+}
+
+/* Middle Header */
+
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px 20px 20px; */
+  padding: 20px 20px 0;
+  flex-wrap: wrap;
+}
+.header-middle .logo {
+
+  width: 220px;
+    cursor: pointer;
+    height: 42px;
+}
+.header-middle .logo img {
+  width: 100%;
+  height: 100%;
+}
+.header-middle .form {
+  width: 600px;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  height: 50px;
+  position: relative;
+}
+.header-middle .form input {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  padding: 20px;
+}
+.header-middle .form .bi {
+  position: absolute;
+  color: #777;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+.header-middle .cart {
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+.header-middle .cart .bi {
+  font-size: 40px;
+  padding: 20px;
+  position: relative;
+}
+.cart .items-on-cart {
+  position: absolute; 
+  top: -7px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+ font-weight: bold;
+ z-index: 999;
+}
+.header-top .menu .bi {
+  color: var(--main-color);
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+}
+
+/* Media Queries */
+
+@media (width > 1400px) {
+  .header-middle .logo {
+    margin-right: -200px;
+  }
+}
+@media (max-width: 1350px) {
+  .header-middle .logo {
+    width: 250px;
+    height: 54px;
+  }
+  .header-top .text {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1100px) {
+  .header-top .text {
+    font-size: 9px;
+  }
+  .header-middle .form {
+    width: 500px;
+  }
+}
+@media (max-width: 960px) {
+  .header-top .text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 900px) {
+  .header-top .phone {
+    font-size: 17px;
+  }
+  .header-top .login {
+    font-size: 21px;
+  }
+  .header-middle .logo {
+    width: 200px;
+  }
+  .form {
+    width: 480px;
+  }
+}
+
+/* Navbar  */
+.navbar {
+    background-color: var(--main-color);
+    z-index: 999999999;
+    position: relative;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar ul>* {
+    text-decoration: none;
+    color: #525452;
+}
+.navbar ul li {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px ;
+    transition: .3s;
+    width: fit-content;
+    height: 100%;
+}
+.navbar ul li:hover {
+    background-color: #fffafa;
+}
+
+
+/* Responsive Mode   */
+@media (max-width: 860px) {
+  .header-top .text {
+    display: none;
+  }
+  .header-top .phone,
+  .header-top .login {
+    font-size: 22px;
+  }
+  .header-top .menu .bi {
+    display: block;
+  }
+  .header-middle .logo {
+    display: none;
+  }
+  .header-middle .form {
+    width: 100% ;
+    margin-bottom: 20px;
+  }
+  .header-middle {
+    justify-content: center;
+  }
+  .navbar ul {
+    position: fixed;
+    height: 100vh;
+    top: 70px;
+    flex-direction: column;
+    z-index: 99;
+    background-color: var(--main-color);
+    width: 40%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    left: -400px;
+    transition: 1s ease;
+  }
+  .navbar ul li {
+    width: 100% !important;
+    height: fit-content;
+  }
+  .navbar >ul>* {
+    width: 100%;
+  }
+}

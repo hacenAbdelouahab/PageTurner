@@ -1,0 +1,34 @@
+.heading-title {
+  text-align: left;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+  
+}
+
+#heading-value {
+  position: relative;
+  font-weight: bold;
+  z-index: 99;
+}
+#heading-value::before {
+  content: "";
+  background-color: gold;
+  position: absolute;
+  left: 0.5rem;
+  bottom: 5px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#heading-value:hover::before {
+  left: -5px;
+  bottom: 0;
+  height: 100%;
+  width: calc(100% + 10px);
+}

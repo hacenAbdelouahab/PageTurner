@@ -1,0 +1,58 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper {
+  height: calc(100vh - 209px);
+  /* height: calc(100vh - 268px); */
+  position: relative;
+}
+.slide-item {
+  background-size: cover;
+}
+.slide-item::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  width: 200%;
+  height: 200%;
+}
+
+.first {
+  background-image: url("../../images/pic1.jpg");
+}
+.second {
+  background-image: url("../../images/xtra.jpg");
+}
+.third {
+  background-image: url("../../images/pic3.jpg");
+}
+.slider-text {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: auto;
+  width: 500px;
+  margin-bottom: auto;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+
+/* Styling Swiper Arrows  */
+.mySwiper [class^="swiper-button-"]::after {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .mySwiper [class^="swiper-button-"]:hover::after {
+    color: #1976d2;
+  }

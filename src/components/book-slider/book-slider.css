@@ -1,0 +1,166 @@
+/* Book Items Styling */
+
+.book-item-wrapper {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 530px;
+  margin-top: 20px;
+}
+
+.book-item-wrapper .image {
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+  cursor: grab;
+  height: 300px;
+}
+.book-item-wrapper .image img {
+  transition: 0.3s ease;
+  height: 100%;
+}
+.book-item-wrapper .image:hover img {
+  transform: scale(1.1);
+}
+.book-item-wrapper .book-title {
+  font-size: 18px;
+  text-align: center;
+  max-width: calc(100% - 20px);
+  margin: auto;
+  margin-top: 15px;
+}
+
+.book-item-wrapper .price {
+  color: #e43241;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.action-bar {
+  border: 1px solid #bfc7c8;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  overflow: hidden;
+}
+.action-bar div {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  transition: .3s;
+  cursor: pointer;
+}
+.action-bar div:hover {
+  background-color: #ececec;
+}
+.action-bar div:first-of-type {
+  border-right: 1px solid #bfc7c8;
+}
+.action-bar div i{ 
+  color: #acb3b4;
+  margin: 5px;
+  font-size: 27px;
+}
+
+
+/*  Swiper Styling ################################## */
+
+.book-slider-wrapper {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.book-swiper-container {
+  width: 100%;
+  max-width: calc(100vw - 150px); 
+  margin: 0 auto; 
+  position: relative;
+}
+
+.book-swiper-slide {
+  width: 250px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-swiper-slide:last-child {
+  margin-right: 0;
+}
+
+.book-swiper-slide .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.book-swiper-slide .rating i {
+  font-size: 16px;
+  color: #ffc107; 
+}
+
+.book-swiper-slide .reviews {
+  margin-left: 15px;
+  color: #777;
+}
+.book-swiper-button-next,
+.book-swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: transparent; 
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef ; 
+  transition: 0.3s ease;
+  position: absolute; 
+}
+.book-swiper-button-next:hover,
+.book-swiper-button-prev:hover {
+  background-color: #e9ecef; 
+}
+.book-swiper-button-next::before,
+.book-swiper-button-prev::before {
+  position: absolute;
+  font-family: 'Font Awesome 5 Pro' ;
+  font-size: 30px;
+  font-weight: 800;
+  color: white; 
+  z-index: 1000000000000000;
+  background-color: #1976d2;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-swiper-button-next::before {
+  content: "\f054" ;
+  
+}
+.book-swiper-button-prev::before {
+  content: "\f053" ;
+}
+.book-swiper-button-next {
+  right: -45px;
+}
+
+.book-swiper-button-prev {
+  left: -45px;
+}

@@ -1,0 +1,170 @@
+.cart {
+  padding: 0 15px 30px;
+}
+
+.cart-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+
+.cart-items {
+  width: 70%;
+}
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  margin-bottom: 21px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 20px;
+  
+}
+
+.cart-item-img {
+  width: 140px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.cart-item-info {
+  padding: 10px;
+  width: calc(100% - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.cart-item-book-title {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.cart-item-author {
+  font-size: 21px;
+}
+
+.cart-item-quantity {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.cart-item-quantity button {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 17px;
+  background-color: #222821;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.cart-item-quantity button:disabled {
+  cursor: not-allowed;
+  background-color: #9b9999;
+}
+
+.cart-item-quantity b {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.cart-item-price {
+  font-size: 24px;
+  text-align: center;
+}
+
+.bi-trash-fill {
+  color: crimson;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cart-summary {
+    width: 25%;
+    border: 1px solid gray;
+    margin: 0 10px;
+    margin-left: auto;
+  }
+  
+  .summary-title {
+    font-size: 22px;
+    padding: 15px 10px;
+  }
+  
+  .summary-item {
+      border-top: 1px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      font-size: 19px;
+  }
+  .empty-cart {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .empty-cart img {
+    width: 220px;
+  }
+  .empty-cart h1 {
+    font-size: 18px;
+    padding: 16px 0px;
+
+  }
+  .empty-cart .empty-cart-link {
+    height: 44px;
+    min-width: 300px;
+    margin: 8px 0;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 24px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+  }
+  .empty-cart .empty-cart-link:hover {
+    background-color: #288cf0;
+
+  }
