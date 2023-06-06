@@ -46,6 +46,9 @@ export default function Header() {
         {context.cartItems.length > 0 && <span className="items-on-cart">{context.cartItems.length}</span> }
         <i className="bi bi-cart2"></i>
         </Link>
+        <Link to="/wishlist" className="wishlist">
+        <i className="bi bi-bag-heart-fill"></i>
+        </Link>
       </div>
       <Navbar  menuDisplayed={menuDisplayed} setMenuDisplayed={setMenuDisplayed}/>
     </header>

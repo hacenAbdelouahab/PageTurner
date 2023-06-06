@@ -153,6 +153,17 @@
     width: 480px;
   }
 }
+.wishlist {
+  position: absolute;
+  right: 120px;
+  color: white;
+  font-size: 35px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+
+
 
 /* Navbar  */
 .navbar {
